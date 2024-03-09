@@ -1,0 +1,9 @@
+@media screen and (min-width:576px) {
+    .legacy-margin {
+        margin: 0 4rem;
+    }
+}
+
+.moja {
+    height: 2000px;
+}
