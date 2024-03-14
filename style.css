@@ -40,11 +40,43 @@ body#scrollbar2::-webkit-scrollbar-thumb {
     z-index: -1;
 }
 
-.bg_image_1 {
-    background-image: url(images/porsche-model.png);
-    height: 1000px;
-    width: auto;
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
 }
+
+
+.image-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.image-container img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+  
+/* .porse-test {
+    font-size: 100px;
+    color: rgb(77, 77, 77);
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    z-index: 0; 
+}
+for future text usage
+
+.bg-image {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    z-index: 1; 
+} 
+*/
+
 
 .footer,
 .navbar {
@@ -91,11 +123,6 @@ a:hover {
     border-radius: 30px;
     border: none;
     padding: 10px 20px;
-}
-
-.footer .social{
-    display: flex;
-    justify-content: center;
 }
 
 .footer .social li a {
