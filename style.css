@@ -3,6 +3,11 @@
     src: url('fonts/911porschav3title.ttf');
 }
 
+@font-face {
+    font-family: 'GoldenHills';
+    src: url('fonts/GoldenHills.ttf');
+}
+
 @media screen and (min-width:576px) {
     .middle-nav-margin {
         margin: 0 4rem;
@@ -94,24 +99,74 @@ body {
     }
 }
 
-/* .porse-test {
-    font-size: 100px;
-    color: rgb(77, 77, 77);
-    position: absolute;
-    top: 500px;
-    left: 50%;
-    z-index: 0; 
+.image-overlay{
+    height: 0px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
 }
-for future text usage
+
+.image-overlay .image-911 {
+    color: linear-gradient(90deg, rgba(0, 0, 0, 1) 43%, rgb(33, 33, 33) 100%);
+    font-family: 'GoldenHills';
+    position: relative;
+    top:40vh;
+    z-index: 0; 
+    font-size: 25vh;
+}
+
+@media screen and (min-width:600px){
+    .image-overlay .image-911{
+        top:35vh;
+        font-size: 35vh;
+    }
+
+    .image-overlay .image-logo{
+        top:50vh !important;
+        font-size: 7vw !important;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .image-overlay .image-911{
+        top:25vh;
+        font-size: 40vh;
+    }
+
+    .image-overlay .image-logo{
+        top: 40vh !important; 
+        font-size: 5vw !important; 
+    }
+}
+
+@media screen and (min-width:2000px){
+    .image-overlay .image-911{
+        top:25vh;
+        font-size: 40vh;
+    }
+
+    .image-overlay .image-logo{
+        top: 30vh !important; 
+        font-size: 5vw !important; 
+    }
+}
+
+.image-overlay .image-logo{
+    font-family: 'PorscheFont';
+    position: relative;
+    top: 50vh;
+    z-index: 2;
+    font-size: 5vw;
+}
 
 .bg-image {
-    height: 600px;
+    height: 800px;
     width: 100%;
     position: relative;
-    object-fit: cover;
+    object-fit: contain;
     z-index: 1; 
 } 
-*/
+
 
 .navbar{
     font-size: 1.3em;
@@ -148,7 +203,7 @@ a:hover {
     color:white;
     box-sizing: border-box;
     --bs-gutter-x: 0;
-    margin-top: 15vh;
+    margin-top: 25vh;
 }
 
 .performance-container img{
